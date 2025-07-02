@@ -782,7 +782,7 @@ Your Answer:`;
 
       const chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
       const payload = { contents: chatHistory };
-      const API_KEY = "AIzaSyAYA_6-LODOtcvI0CfOBfuXGKPDd4MLzso"; // Leave as empty string for Canvas to provide it.
+      // const API_KEY = "AIzaSyAYA_6-LODOtcvI0CfOBfuXGKPDd4MLzso"; // Leave as empty string for Canvas to provide it.
       const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
 
       const response = await fetch(apiUrl, {
